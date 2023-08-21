@@ -43,7 +43,7 @@ for(i =0; i < unitedKingdom.length; i++){
   }
 }
 
-  console.log(england);
+  // console.log(england);
 
 /**
  * Q2. Change the capital of Wales to "Cardiff"
@@ -58,7 +58,7 @@ for(i=0; i < unitedKingdom.length; i++){
 }
 
 
- console.log(wales);
+//  console.log(wales);
 
 /**
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland
@@ -66,8 +66,35 @@ for(i=0; i < unitedKingdom.length; i++){
 
 northernIrelandKeys = null;
 
-// console.log(northernIrelandKeys);
+for(i=0; i < unitedKingdom.length; i++){
+  if(unitedKingdom[i].name == "Northern Ireland"){
+    northernIrelandObject = unitedKingdom[i]
+    console.log(northernIrelandObject);
+    northernIrelandKeys = Object.keys(northernIrelandObject);
+  }
+}
+
+ console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the other countries and print out if it is the biggest, smallest or somewhere in the middle.
  */
+
+for(i=0; i < unitedKingdom.length; i++){
+    scotPopulation = unitedKingdom[0].population;
+    max = 0;
+    min = 10000000000;
+    if(unitedKingdom[i].population > max){
+      max = unitedKingdom[i].population
+    }
+    if(unitedKingdom[i].population < min){
+      min = unitedKingdom[i].population;
+    }
+  }
+    if(scotPopulation == max){
+      console.log("Scotland has the biggest population");
+    } else if(scotPopulation == min){
+      console.log("Scotland has the smallest population");
+    } else {
+      console.log("Scotland population is somewhere in the middle");
+    }

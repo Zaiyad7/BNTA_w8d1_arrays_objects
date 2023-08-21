@@ -82,8 +82,10 @@ for(i=0; i < unitedKingdom.length; i++){
 
 for(i=0; i < unitedKingdom.length; i++){
     scotPopulation = unitedKingdom[0].population;
+    
     max = 0;
     min = 10000000000;
+
     if(unitedKingdom[i].population > max){
       max = unitedKingdom[i].population
     }

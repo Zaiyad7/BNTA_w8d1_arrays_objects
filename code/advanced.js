@@ -33,26 +33,32 @@ unitedKingdom = [
  */
 
 england = null;
+for(i =0; i < unitedKingdom.length; i++){
 
-// console.log(england);
+  if(unitedKingdom[i].name == "England"){
+
+    englandObject = unitedKingdom[i]
+    englandObject["touristAttractions"] = ["London Eye", "Big Ben"]
+    england = englandObject;
+  }
+}
+
+  console.log(england);
 
 /**
  * Q2. Change the capital of Wales to "Cardiff"
  */
 
-wales = null;
-for (country of unitedKingdom){
-  console.log(country);
-  for (countryProperty in country){
-    if(countryProperty === "Swansea"){
-      countryProperty = "Cardiff";
-      wales = countryProperty;
+for(i=0; i < unitedKingdom.length; i++){
+    if(unitedKingdom[i].capital == "Swansea"){
+      wales = unitedKingdom[i]
+      wales.capital = "Cardiff"
     }
-  }
+
 }
 
 
-console.log(wales);
+ console.log(wales);
 
 /**
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland

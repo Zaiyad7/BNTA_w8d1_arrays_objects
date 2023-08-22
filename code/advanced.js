@@ -1,7 +1,7 @@
 /**
  * These tasks are more complicated! Using combinations of arrays and objects is very common, here you will need to combine what you know about both to complete the tasks.
  */
-
+// 5454000
 unitedKingdom = [
   {
     name: "Scotland",
@@ -84,7 +84,7 @@ for(i=0; i < unitedKingdom.length; i++){
     scotPopulation = unitedKingdom[0].population;
     
     max = 0;
-    min = 10000000000;
+    min = 10000000000000;
 
     if(unitedKingdom[i].population > max){
       max = unitedKingdom[i].population
@@ -93,9 +93,9 @@ for(i=0; i < unitedKingdom.length; i++){
       min = unitedKingdom[i].population;
     }
   }
-    if(scotPopulation == max){
+    if(scotPopulation >= max){
       console.log("Scotland has the biggest population");
-    } else if(scotPopulation == min){
+    } else if(scotPopulation <= min){
       console.log("Scotland has the smallest population");
     } else {
       console.log("Scotland population is somewhere in the middle");
